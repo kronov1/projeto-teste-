@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body id="bg">
+    <header class="title-container">
+        <h1 class="title">Eai, com fome?</h1>
+        <h2 class="subtitle">Então faça login, ou crie uma conta</h2>
+    </header>
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box email">
+                    <label>Email</label>
+                    <input type="email" required placeholder="Endereço de email">
+                </div>
+                <div class="input-box senha">
+                    <label>Senha</label>
+                    <input type="password" required placeholder="123******">
+                </div>
+                <div class="submit-container">
+                    <a class="forgot-password" href="#">Esqueceu sua senha?</a>
+                    <button type="submit" class="btn-entrar">Entrar</button>
+                </div>
+                <div class="register-noaccount">
+                    <ipnut type="button" class="btn register">Cadastrar</ipnut>
+                    <a class="btn-no-account" href="#">Pedir sem conta</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box noacc">
+            <h2>Vamos pedir?</h2>
+            <form action="#">
+                <div class="input-box email">
+                    <label>Informe seu nome</label>
+                    <input type="text" required placeholder="Ex: José Almeida">
+                </div>
+                <div class="submit-container">
+                    <button type="submit" class="btn-entrar">Fazer pedido</button>
+                </div>
+                <div class="register-noaccount">
+                    <ipnut type="button" class="btn voltar"><img class="arrow" src="../img/back.png" alt=""> Voltar</ipnut>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2 class="subtitulo">Cadastro</h2>
+            <form action="#">
+                <div class="input-box user">
+                    <label>Nome</label>
+                    <input type="text" required placeholder="Nome de usuário">
+                </div>
+                <div class="input-box email">
+                    <label>Email</label>
+                    <input type="email" required placeholder="Endereço de email">
+                </div>
+                <div class="input-box senha">
+                    <label>Senha</label>
+                    <input type="password" required placeholder="123******">
+                </div>
+                <div class="submit-container">
+                    <label class="chk">
+                        <input type="checkbox" name="exemplo" />
+                        <span></span>
+                        Eu aceito os termos & condições
+                    </label>
+                    <button type="submit" class="btn-entrar">Registrar</button>
+                </div>
+                <div class="register-noaccount">
+                    <p>Já possui uma conta?</p>
+                    <ipnut type="button" class="btn log">Login</ipnut>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+:root {
+    --vermelho: #FF0000;
+}
+
+@font-face {
+    font-family: noodle;
+    src: url('../fonts/big_noodle_titling_oblique.ttf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap');
+
+* {
+    font-family: 'Amiko', sans-serif;
+}
+
+/*background*/
+
+#bg {
+    background-image: url(../img/login\ bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*header*/
+
+.title {
+    font-family: 'Amiko', sans-serif;
+    color: #fff;
+    
+    text-align: center;
+    font-size: 2.5rem;
+    
+    margin-top: 20%;
+    
+    font-weight: bold;
+}
+
+.subtitle {
+    font-family: 'Amiko', sans-serif;
+    color: #ffffff91;   
+
+    text-align: center;
+    font-size: 1.3rem;
+    width: 280px;
+    
+    text-align: left;
+    align-self: center;
+    margin-left: 14%;
+    margin-top: 4%;
+
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/*login form*/
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    position: absolute;
+    height: 590px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: height 1s ease;
+}
+
+.wrapper.active {
+    height: 700px;
+}
+
+.wrapper.no-acc {
+    height: 400px;
+}
+
+.wrapper .form-box.login {
+    transition: transform 1s ease, margin-top 1s ease;
+    transform: translateY(170px);
+}
+
+.wrapper.active .form-box.login {
+    transform: translate(-500px, 220px);
+    margin-top: 30%;
+}
+
+.wrapper .form-box.noacc {
+    transform: translateY(300px);
+    transition: transform 1s ease;
+}
+
+.wrapper.no-acc .form-box.login {
+    transform: translateY(-355px);
+}
+
+.wrapper.no-acc .form-box.noacc {
+    transform: translateY(-250px);
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    top: 15%;
+    transform: translateX(500px);
+    transition: transform 1s ease;
+}
+
+.wrapper.active .form-box.register {
+    transform: translateX(0px);
+}
+
+.wrapper.no-acc .form-box.login {
+    
+}
+
+.arrow {
+    width: 15px;
+}
+
+.email {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.input-box label {
+    font-size: 0.95rem;
+    color: #00000089;
+}
+
+.input-box input {
+    width: 248px;
+    height: 25px;
+    padding: 10px;
+
+    border: 1px solid #0000007c;
+
+    font-size: 1.1rem;
+    font-family: 'Amiko', sans-serif;
+
+    align-items: center;
+    transition: border-color .17s ease;
+}
+
+.input-box input:focus {
+    border-color: #FF0000;
+}
+
+.input-box input::placeholder {
+    color: #00000033;
+}
+
+.submit-container {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-top: 15px;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #0000007c;
+    font-size: 0.87rem;
+}
+
+.btn-entrar {
+    margin-top: 30px;
+    background-color: var(--vermelho);
+    border: none;
+    color: #fff;
+
+    font-family: 'Amiko', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1.1px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+}
+
+.register-noaccount {
+    width: 260px;
+    margin-top: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid #FF0000;
+    font-family: 'Amiko', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #00000099;
+
+    width: 85px;
+    padding-top: 10px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+
+    border-radius: 4px;
+    text-align: center;
+}
+
+.chk {
+    width: 270px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    text-align: left;
+    font-size: 0.8rem;
+    color: #0000007c;
+}
+
+.chk input {
+    display: none;
+}
+
+.chk span {
+    width: 14px;
+    height: 14px;
+    display: block;
+    background-color: #fff;
+    border-radius: 3.5px;
+    border: 1px solid #DDD;
+}
+
+.chk input:checked + span {
+    background-color: #c03;
+}
+
+.btn-no-account {
+    font-weight: bold;
+    color: #ff0000ad;
+}
+
+p {
+    color: #00000095;
+    font-size: 0.8rem;
+}

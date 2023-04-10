@@ -1,0 +1,63 @@
+:root {
+    --vermelho: #FF0000;
+}
+
+@font-face {
+    font-family: noodle;
+    src: url('../fonts/big_noodle_titling_oblique.ttf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap');
+
+/*background*/
+
+#bg {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*title*/
+
+.titulo {
+    color: #fff;
+    font-family: noodle;
+    font-size: 6rem;
+    text-align: center;
+
+    margin-top: 35%;
+
+    letter-spacing: 3px;
+    line-height: 127%;
+}
+
+/*button*/
+
+.container {
+    text-align: center;
+
+    margin-top: 30%;
+    margin-bottom: 40%;
+}
+
+.btn {
+    background-color: var(--vermelho);
+    border: none;
+    color: #fff;
+
+    font-family: 'Amiko', sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    letter-spacing: 1.1px;
+
+    padding-top: 20px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+    padding-left: 16px;
+
+    border-radius: 4px;
+}
+
+/*-----*/
