@@ -65,10 +65,11 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    background-color: #00000033;
 
     position: absolute;
     height: 590px;
-    top: 60%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
