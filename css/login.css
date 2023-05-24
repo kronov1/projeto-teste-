@@ -15,7 +15,7 @@
 
 /*background*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 401px) {
     #bg {
         background-image: url(../img/login\ bg.png);
         background-repeat: no-repeat;
