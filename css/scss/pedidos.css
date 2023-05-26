@@ -8,18 +8,39 @@ body {
 .category-title {
   align-self: flex-start;
   font-size: 20px;
-  padding: 20px;
+  padding: 25px;
 }
 
-.categorys {
-  display: flex;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-}
-.categorys .category {
-  background-color: #fff;
-  width: 100px;
-  height: 30px;
+.category {
   border: none;
-  border-right: 1px solid rgba(0, 0, 0, 0.267);
+  outline: none;
+  background-color: #fff;
+  font-size: 1.1rem;
+  transition: all 0.1s ease;
+}
+.category:focus {
+  color: #ff0000;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 25px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=pedidos.css.map */

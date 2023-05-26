@@ -7,17 +7,21 @@
     <title>Pedido</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/scss/pedidos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <h1 class="category-title">Categorias</h1>
-    <ul class="categorys">
-        <li><input class="category" type="button" value="Pizza">
-        </li>
-        <li><input class="category" type="button" value="Coxinha">
-        </li>
-        <li><input class="category" type="button" value="Milkshake">
-        </li>
-    </ul>
+    <div class="swiper mySwiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide"><button class="category">Pizzas</button></li>
+          <li class="swiper-slide"><button class="category">Coxinhas</button></li>
+          <li class="swiper-slide"><button class="category">Pastéis</button></li>
+          <li class="swiper-slide"><button class="category">Hambúrguers</button></li>
+          <li class="swiper-slide"><button class="category">Sushi's</button></li>
+          <li class="swiper-slide"><button class="category">Saladas</button></li>
+        </ul>
+      </div>
 
     <ul class="pedidos">
         <li class="pedido">
@@ -59,5 +63,8 @@
     </div>
 
     <button>Concluir pedido</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
 </body>
 </html>
