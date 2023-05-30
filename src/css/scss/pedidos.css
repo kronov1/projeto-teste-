@@ -45,4 +45,33 @@ body {
      object-fit: cover;
 }
 
-/*COMIDAS*//*# sourceMappingURL=pedidos.css.map */
+/*COMIDAS*/
+.comidas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  height: 400px;
+  overflow-y: scroll;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.438);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.384);
+}
+.comidas-container .prato-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-right: 36px;
+  padding-bottom: 16px;
+  padding-left: 36px;
+}
+.comidas-container .prato-container .prato {
+  font-size: 17.6px;
+}
+.comidas-container .prato-container .check-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+}/*# sourceMappingURL=pedidos.css.map */
