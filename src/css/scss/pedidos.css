@@ -151,4 +151,14 @@ body {
 .payment-container .total {
   color: rgba(255, 0, 0, 0.8235294118);
   font-weight: regular;
+}
+
+.btn-send {
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff0000;
+  width: 100%;
 }/*# sourceMappingURL=pedidos.css.map */
