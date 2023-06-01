@@ -26,7 +26,7 @@ body {
 .swiper {
   width: 100%;
   height: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .swiper-slide {
@@ -50,25 +50,42 @@ body {
 .comidas-container {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  align-items: center;
+  gap: 40px;
   width: 100%;
   height: 400px;
   overflow-y: scroll;
-  border-top: 0.5px solid rgba(0, 0, 0, 0.438);
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.384);
+  padding-top: 20px;
+  background-color: #fff;
+}
+.comidas-container::-webkit-scrollbar {
+  width: 4px;
+}
+.comidas-container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 0, 0, 0.6);
+  border-radius: 30px;
 }
 .comidas-container .prato-container {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 80%;
+  height: 60px;
   justify-content: space-between;
   padding-top: 16px;
   padding-right: 19px;
   padding-bottom: 16px;
-  padding-left: 19px;
+  padding-left: 10px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  background-color: #fff;
 }
 .comidas-container .prato-container .prato {
   font-size: 17.6px;
+}
+.comidas-container .prato-container .comida-img {
+  width: 90px;
+  border-radius: 50%;
 }
 .comidas-container .prato-container .check-container {
   display: flex;
@@ -78,9 +95,14 @@ body {
 }
 .comidas-container .prato-container .check-container .preço {
   letter-spacing: 1.5px;
-  color: #ff0000;
-  font-weight: bold;
+  color: rgba(255, 0, 0, 0.8235294118);
+  font-weight: regular;
 }
+.comidas-container .prato-container .check-container .comida-desc {
+  display: flex;
+  flex-direction: column;
+}
+
 .observation {
   display: flex;
   flex-direction: column;
