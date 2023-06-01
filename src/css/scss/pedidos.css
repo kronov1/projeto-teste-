@@ -68,6 +68,7 @@ body {
   height: 400px;
   overflow-y: scroll;
   padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #fff;
 }
 .comidas-container::-webkit-scrollbar {
