@@ -9,11 +9,9 @@ html * {
     outline: 0;
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: amiko;
 }
 html,
-body {
-    font-family: sans-serif;
-}
 body,
 div,
 dl,

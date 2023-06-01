@@ -66,9 +66,9 @@ body {
   
     justify-content: space-between;
     padding-top: 16px;
-    padding-right: 36px;
+    padding-right: 19px;
     padding-bottom: 16px;
-    padding-left: 36px;
+    padding-left: 19px;
     .prato {
       font-size: 17.6px;
     }
@@ -79,11 +79,57 @@ body {
   
       gap: 7px;
       .preço {
-  
+        letter-spacing: 1.5px;
+        color: #ff0000;
+        font-weight: bold;
       }
       .check {
-  
+        
       }
     }
+  }
+}
+
+.observation {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+
+  margin-top: 30px;
+  margin-bottom: 20px;
+  .obs-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+    img {
+
+    }
+    h1 {
+      color: #0000007c;
+      font-weight: bold;
+    }
+  }
+  .obs-textarea {
+    resize: none;
+    height: 40px;
+    padding: 10px;
+
+    border-radius: 4px;
+    border: 1.5px solid #D9D9D9;
+    font-size: 0.9rem;
+  }
+}
+
+.payment-container {
+  display: flex;
+  
+  .payment-title {
+
+  }
+  .total {
+
   }
 }
