@@ -5,10 +5,22 @@ body {
     align-items: center;
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-left: 50px;
+  img {
+    opacity: 0.5;
+    width: 25px;
+  }
+}
+
 .category-title {
     align-self: flex-start;
     font-size: 20px;
-    padding: 25px;
+    padding: 25px 25px 25px 10px;
 }
 
 .category {
@@ -35,7 +47,6 @@ body {
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,11 +161,12 @@ body {
 
 .payment-container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-  .payment-title {
-
-  }
+  padding-bottom: 20px;
   .total {
-
+    color: #ff0000d2;
+    font-weight: regular;
   }
 }
