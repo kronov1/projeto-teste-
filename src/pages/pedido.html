@@ -17,15 +17,14 @@
     </div>
     <div class="swiper mySwiper">
         <ul class="swiper-wrapper">
-          <li class="swiper-slide"><button class="category">Pratos principais</button></li>
-          <li class="swiper-slide"><button class="category">Sobremesas</button></li>
-          <li class="swiper-slide"><button class="category">Entradas</button></li>
-          <li class="swiper-slide"><button class="category">Saladas</button></li>
+          <li class="swiper-slide"><button onclick="filtrarpr()" id="pratoPrincipal" class="category">Pratos principais</button></li>
+          <li class="swiper-slide"><button id="sobremesa" class="category">Sobremesas</button></li>
+          <li class="swiper-slide"><button id="entrada" class="category">Entradas</button></li>
         </ul>
       </div>
 
       <div class="comidas-container">
-        <div class="prato-container">
+        <div id="prato" class="prato-container pp">
             <div class="check-container">
                 <img class="comida-img" src="../../assets/pizza-peperoni.jpg" alt="">
                 <div class="comida-desc">
@@ -38,7 +37,7 @@
                 <label for="checkbox-1"></label>
             </div>
         </div>
-        <div class="prato-container">
+        <div id="prato" class="prato-container pp">
             <div class="check-container">
                 <img class="comida-img" src="../../assets/bolonhesa.jpg" alt="">
                 <div class="comida-desc">
@@ -51,7 +50,7 @@
                 <label for="checkbox-2"></label>
             </div>
         </div>
-        <div class="prato-container">
+        <div id="prato" class="prato-container et">
             <div class="check-container">
                 <img class="comida-img" src="../../assets/salada caprese.jpg" alt="">
                 <div class="comida-desc">
@@ -64,7 +63,7 @@
                 <label for="checkbox-3"></label>
             </div>
         </div>
-        <div class="prato-container">
+        <div id="prato" class="prato-container pp">
             <div class="check-container">
                 <img class="comida-img camarao" src="../../assets/camarão a baiana.jpg" alt="">
                 <div class="comida-desc">
@@ -77,7 +76,7 @@
                 <label for="checkbox-4"></label>
             </div>
         </div>
-        <div class="prato-container">
+        <div id="prato" class="prato-container sm">
             <div class="check-container">
                 <img class="comida-img" src="../../assets/tiramisu.jpg" alt="">
                 <div class="comida-desc">
@@ -90,7 +89,7 @@
                 <label for="checkbox-5"></label>
             </div>
         </div>
-        <div class="prato-container">
+        <div id="prato" class="prato-container pp">
             <div class="check-container">
                 <img class="comida-img" src="../../assets/risoto-com-cogumelos.avif" alt="">
                 <div class="comida-desc">
@@ -103,7 +102,7 @@
                 <label for="checkbox-6"></label>
             </div>
         </div>
-        <div class="prato-container">
+        <div id="prato" class="prato-container et">
             <div class="check-container">
                 <img class="comida-img" src="../../assets/bruschetta.jpg" alt="">
                 <div class="comida-desc">
@@ -116,7 +115,7 @@
                 <label for="checkbox-7"></label>
             </div>
         </div>
-        <div class="prato-container">
+        <div id="prato" class="prato-container id">
             <div class="check-container">
                 <img class="comida-img" src="../../assets/panna cotta.jpg" alt="">
                 <div class="comida-desc">
@@ -129,7 +128,7 @@
                 <label for="checkbox-8"></label>
             </div>
         </div>
-        <div class="prato-container">
+        <div id="prato" class="prato-container pp">
             <div class="check-container">
                 <img class="comida-img" src="../../assets/salmão.jpg" alt="">
                 <div class="comida-desc">
@@ -142,7 +141,7 @@
                 <label for="checkbox-9"></label>
             </div>
         </div>
-        <div class="prato-container">
+        <div id="prato" class="prato-container et">
             <div class="check-container">
                 <img class="comida-img" src="../../assets/ceviche.png" alt="">
                 <div class="comida-desc">
@@ -155,7 +154,7 @@
                 <label for="checkbox-10"></label>
             </div>
         </div>
-        <div class="prato-container">
+        <div id="prato" class="prato-container sm">
             <div class="check-container">
                 <img class="comida-img" src="../../assets/mousse.avif" alt="">
                 <div class="comida-desc">
@@ -168,7 +167,7 @@
                 <label for="checkbox-11"></label>
             </div>
         </div>
-        <div class="prato-container">
+        <div id="prato" class="prato-container sm">
             <div class="check-container">
                 <img class="comida-img" src="../../assets/pudim.jpg" alt="">
                 <div class="comida-desc">
@@ -181,7 +180,7 @@
                 <label for="checkbox-12"></label>
             </div>
         </div>
-        <div class="prato-container">
+        <div id="prato" class="prato-container pp">
             <div class="check-container">
                 <img class="comida-img" src="../../assets/Salada-Caesar.png" alt="">
                 <div class="comida-desc">
@@ -194,7 +193,7 @@
                 <label for="checkbox-13"></label>
             </div>
         </div>
-        <div class="prato-container">
+        <div id="prato" class="prato-container sm">
             <div class="check-container">
                 <img class="comida-img" src="../../assets/cheesecake.png" alt="">
                 <div class="comida-desc">
@@ -222,7 +221,7 @@
         <p id="total">R$ <span id="number">0</span></p>
     </div>
 
-    <button class="btn-send">Concluir pedido</button>
+    <a href="confirmação.html"><button class="btn-send">Concluir pedido</button></a>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../js/swiper.js"></script>

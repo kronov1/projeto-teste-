@@ -15,8 +15,6 @@ window.addEventListener('DOMContentLoaded', function() {
     var checkbox13 = document.getElementById('checkbox-14');
     var paragraph = document.getElementById('number');
     var number = 0;
-    
-    parseFloat(number)
 
     checkbox.addEventListener('change', function() {
         if (checkbox.checked) {
