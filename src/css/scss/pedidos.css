@@ -178,7 +178,7 @@ body {
   width: 90%;
   padding-bottom: 20px;
 }
-.payment-container .total {
+.payment-container #total {
   color: rgba(255, 0, 0, 0.8235294118);
   font-weight: regular;
 }
